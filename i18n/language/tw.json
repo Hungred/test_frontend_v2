@@ -1,4 +1,17 @@
 {
   "welcome": "歡迎",
-  "test": "測試"
+  "test": "測試",
+  "operation": "操作",
+  "age": "年齡",
+  "name": "名字",
+  "update": "修改",
+  "add": "新增",
+  "delete": "刪除",
+  "confirm": "確認",
+  "cancel": "取消",
+  "dialogTitle": {
+    "add": "新增用戶",
+    "update": "修改用戶",
+    "delete": "刪除用戶"
+  }
 }

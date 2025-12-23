@@ -1,4 +1,17 @@
 {
   "welcome": "Welcome",
-  "test": "Test"
+  "test": "Test",
+  "operation": "Operations",
+  "age": "Age",
+  "name": "Name",
+  "update": "Update",
+  "add": "Add",
+  "delete": "Delete",
+  "confirm": "Confirm",
+  "cancel": "Cancel",
+  "dialogTitle": {
+    "add": "Add User",
+    "update": "Update User",
+    "delete": "Delete User"
+  }
 }
