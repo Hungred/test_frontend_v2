@@ -20,5 +20,6 @@
   "error": {
     "name": "Name is too short, at least two characters are required",
     "age": "Age must be a number and greater than zero"
-  }
+  },
+  "noData": "No data"
 }

@@ -21,7 +21,11 @@
         />
         <p v-if="errors.name" class="text-red-500 text-xs -mt-4 ml-1">{{ errors.name }}</p>
 
-        <ETextField :label="$t('age')" v-model:value="formData.age" :placeholder="$t('inputAge')" />
+        <ETextField
+          :label="$t('age')"
+          v-model:value.number="formData.age"
+          :placeholder="$t('inputAge')"
+        />
         <p v-if="errors.age" class="text-red-500 text-xs -mt-4 ml-1">{{ errors.age }}</p>
 
         <div class="flex justify-end gap-3 mt-2">
@@ -61,6 +65,11 @@
               }}</EBtn>
             </td>
           </tr>
+          <tr v-if="userStore.users.length <= 0">
+            <td class="align-center" :colspan="4">
+              {{ $t('noData') }}
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -72,6 +81,7 @@ import { useUserStore } from '@/store/user'
 import { reactive, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import EDialog from '@/components/EDialog.vue'
+import type { MainUpdateUserInfoReq } from '~/api-client'
 
 const { t, locales } = useI18n()
 
@@ -159,7 +169,7 @@ const resetForm = () => {
   formData.age = 0
 }
 
-const startEdit = (user: any) => {
+const startEdit = (user: MainUpdateUserInfoReq) => {
   isEditing.value = true
   Object.assign(formData, user)
 }
