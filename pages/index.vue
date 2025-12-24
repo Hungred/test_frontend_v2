@@ -11,7 +11,9 @@
       </button>
     </div>
 
-    <div class="w-full max-w-[600px] border border-gray-600 rounded-3xl p-6 bg-[#2a2a2a] shadow-xl">
+    <div
+      class="w-full max-w-[600px] border box-border border-gray-600 rounded-3xl p-6 bg-[#2a2a2a] shadow-xl"
+    >
       <h2 class="text-center text-xl font-bold mb-6 tracking-widest">{{ $t('operation') }}</h2>
       <div class="flex flex-col gap-5">
         <ETextField
@@ -38,7 +40,7 @@
     </div>
 
     <div
-      class="w-full max-w-[600px] border border-gray-600 rounded-3xl p-6 bg-[#2a2a2a] shadow-xl overflow-x-auto"
+      class="w-full max-w-[600px] border box-border border-gray-600 rounded-3xl p-6 bg-[#2a2a2a] shadow-xl overflow-x-auto"
     >
       <table class="w-full text-center border-collapse">
         <thead>
@@ -58,7 +60,7 @@
             <td class="py-4 text-gray-400">{{ index + 1 }}</td>
             <td class="font-medium">{{ user.name }}</td>
             <td>{{ user.age }}</td>
-            <td class="flex justify-center gap-2 py-4">
+            <td class="flex justify-center gap-2 py-4 flex-wrap">
               <EBtn color="success" @click="startEdit(user)">{{ $t('update') }}</EBtn>
               <EBtn color="error" @click="handleConfirm('delete', user.id)">{{
                 $t('delete')
