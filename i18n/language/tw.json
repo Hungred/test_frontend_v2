@@ -13,5 +13,12 @@
     "add": "新增用戶",
     "update": "修改用戶",
     "delete": "刪除用戶"
+  },
+  "dialogContent": "確認送出？",
+  "inputName": "請輸入名字",
+  "inputAge": "請輸入年齡",
+  "error": {
+    "name": "名字太短，至少需要兩個字元",
+    "age": "年齡必須是數字且大於零"
   }
 }

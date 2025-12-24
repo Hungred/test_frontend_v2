@@ -13,5 +13,12 @@
     "add": "Add User",
     "update": "Update User",
     "delete": "Delete User"
+  },
+  "dialogContent": "Are you sure you want to submit?",
+  "inputName": "Please enter name",
+  "inputAge": "Please enter age",
+  "error": {
+    "name": "Name is too short, at least two characters are required",
+    "age": "Age must be a number and greater than zero"
   }
 }
