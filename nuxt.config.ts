@@ -60,7 +60,7 @@ export default defineNuxtConfig({
 
   postcss: {
     plugins: {
-      '@unocss/postcss': {},
+      // '@unocss/postcss': {},
       'postcss-preset-env': {
         stage: 1,
         features: {

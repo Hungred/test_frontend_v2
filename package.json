@@ -29,15 +29,14 @@
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "^2.26.0",
     "@types/lodash-es": "^4.17.12",
-    "@unocss/nuxt": "^65.5.0",
-    "@unocss/postcss": "^65.5.0",
+    "@unocss/nuxt": "^66.5.10",
     "postcss": "^8.5.6",
     "postcss-nested": "^7.0.2",
     "postcss-preset-env": "^10.2.4",
     "postcss-pxtorem": "^6.1.0",
     "prettier": "^3.6.2",
     "sass": "^1.90.0",
-    "unocss": "^65.5.0",
+    "unocss": "^66.5.10",
     "vue-tsc": "^3.0.5"
   }
 }
